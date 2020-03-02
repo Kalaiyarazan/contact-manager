@@ -5,7 +5,11 @@ const userRouter = require('./routes/users');
 const contactRouter = require('./routes/contacts');
 const authRouter = require('./routes/auth');
 
+const ConnectDB = require('./config/db');
+
 const app = express();
+
+ConnectDB();
 
 const PORT = process.env.PORT || 5000;
 
