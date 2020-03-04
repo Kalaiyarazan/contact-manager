@@ -12,6 +12,8 @@ const app = express();
 ConnectDB();
 
 const PORT = process.env.PORT || 5000;
+//Middlewares
+app.use(express.json({ extended: false }));
 
 app.use('/api/users', userRouter);
 app.use('/api/contacts', contactRouter);
