@@ -1,3 +1,78 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f4fb;
+}
+.bg-primary {
+  background-color: #192965;
+}
+.bg-secondary {
+  background-color: #ffa34d;
+}
+
+.bg-success {
+  background-color: #1eb2a6;
+}
+
+.bg-danger {
+  background-color: #f67575;
+}
+
+.bg-light {
+  background-color: #f2f4fb;
+}
+
+.bg-dark {
+  background-color: #393e46;
+}
+
+.white {
+  color: #f2f4fb;
+}
+
+a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.btn {
+  padding: 5px 20px;
+  color: white;
+}
+
+.nav-btn {
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+/* **************NavBar************** */
+
+.navbar {
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .brand {
+  display: flex;
+  align-items: center;
+}
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin: 0px 5%;
+  padding: 20px 0;
+  height: 100vh;
 }
