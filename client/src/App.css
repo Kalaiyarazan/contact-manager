@@ -41,9 +41,16 @@ a {
   margin: 5px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .btn {
   padding: 5px 20px;
   color: white;
+  border: none;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .nav-btn {
@@ -71,8 +78,63 @@ a {
   display: flex;
   align-items: center;
 }
+/* **********App********** */
 .container {
   margin: 0px 5%;
   padding: 20px 0;
   height: 100vh;
+}
+
+/* ************ContactItems************ */
+
+.card {
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid grey;
+  line-height: 35px;
+}
+.badge {
+  font-size: 13px;
+  font-weight: 100;
+  float: right;
+}
+
+/* *********Home********** */
+
+.home-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-form {
+  width: 60%;
+}
+
+.contacts {
+  width: 30%;
+}
+
+/* *********ContactForm************* */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  line-height: 35px;
+}
+.form-group input {
+  width: 40%;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.form-group-radio {
+  line-height: 35px;
+}
+.form-group-radio input {
+  margin: 0px 20px;
+}
+
+form .btn {
+  width: 40%;
 }

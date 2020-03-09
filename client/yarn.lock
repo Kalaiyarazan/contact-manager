@@ -3620,6 +3620,7 @@ __metadata:
     react-icons: ^3.9.0
     react-router-dom: ^5.1.2
     react-scripts: 3.4.0
+    uuid: ^7.0.2
   languageName: unknown
   linkType: soft
 
@@ -13553,6 +13554,15 @@ resolve@1.15.0:
   bin:
     uuid: ./bin/uuid
   checksum: 28cbce9f7d0d63229a0a1926bac76d72c22ff21009e5581477c5dad59e00a52ea48f487048476c85fd9dddcd7a29216475d33e4da851ccf8fe04baafe2957c74
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "uuid@npm:7.0.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: b4aae8493abce43a4175bc5cb3723597327dab8fa1564743bc1f7ac57f3895124cfcdbf5856506c4e29b23a41269bed8c85769fcac7b3b8f4351435a236e5189
   languageName: node
   linkType: hard
 
