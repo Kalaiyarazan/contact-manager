@@ -2,23 +2,25 @@ import React, { Fragment, useContext } from 'react';
 import { FaEnvelopeOpen, FaPhone } from 'react-icons/fa';
 import ContactContext from '../../context/contact/contactContext';
 
-const ContactItem = ({ contact: { id, name, email, phone, type } }) => {
+const ContactItem = ({ contact }) => {
+  const { id, name, email, phone, type } = contact;
   const contactContext = useContext(ContactContext);
 
-  const { deleteContact } = contactContext;
+  const { deleteContact, setCurrent, clearCurrent } = contactContext;
 
   const onDelete = () => {
     deleteContact(id);
+    clearCurrent();
   };
   return (
     <Fragment>
       <div className='card'>
         <h3>
           {name}
-          {/* {'  '}
+          {'  '}
           <span className='badge'>
             {type.charAt(0).toUpperCase() + type.slice(1)}
-          </span> */}
+          </span>
         </h3>
         <ul className='contact-list'>
           {email && (
@@ -35,7 +37,9 @@ const ContactItem = ({ contact: { id, name, email, phone, type } }) => {
             </li>
           )}
         </ul>
-        <button className='btn bg-dark'>Edit</button>
+        <button className='btn bg-dark' onClick={() => setCurrent(contact)}>
+          Edit
+        </button>
         <button className='btn bg-danger' onClick={onDelete}>
           Delete
         </button>
