@@ -85,6 +85,15 @@ li {
   height: 100vh;
 }
 
+/* *************Contacts************* */
+
+.no-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 5px;
+}
+
 /* ************ContactItems************ */
 
 .card {
@@ -112,6 +121,17 @@ li {
 
 .contacts {
   width: 30%;
+}
+
+.contacts form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.contacts input {
+  padding: 8px;
+  font-size: 15px;
 }
 
 /* *********ContactForm************* */
