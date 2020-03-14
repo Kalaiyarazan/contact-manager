@@ -158,3 +158,17 @@ li {
 form .btn {
   width: 40%;
 }
+
+/* *************Alert************** */
+
+.alert {
+  padding: 10px;
+  margin: 10px 0px;
+  color: #f2f4fb;
+  display: flex;
+  align-items: center;
+}
+
+.alert span {
+  margin-left: 10px;
+}

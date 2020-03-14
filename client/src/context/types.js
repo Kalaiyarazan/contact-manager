@@ -8,3 +8,7 @@ export const FILTER_CONTACT = 'FILTER_CONTACT';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
 
 //Auth Context
+
+//Alert Context
+export const SET_ALERT = 'SET_ALERT';
+export const REMOVE_ALERT = 'REMOVE_ALERT';
