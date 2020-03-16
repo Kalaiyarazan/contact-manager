@@ -8,6 +8,13 @@ export const FILTER_CONTACT = 'FILTER_CONTACT';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
 
 //Auth Context
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+export const CLEAR_ERROR = 'CLEAR_ERROR';
+export const USER_LOADED = 'USER_LOADED';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAIL = 'LOGIN_FAIL';
 
 //Alert Context
 export const SET_ALERT = 'SET_ALERT';

@@ -1,18 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import AlertContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 
-const Login = () => {
+const Login = props => {
+  const alertContext = useContext(AlertContext);
+  const authContext = useContext(AuthContext);
+
+  const { setAlert } = alertContext;
+  const { login, error, clearError, isAuthenticated } = authContext;
+
   const [user, setUser] = useState({
     email: '',
     password: ''
   });
 
+  const { email, password } = user;
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      props.history.push('/');
+    }
+    if (error !== null) {
+      setAlert(error, 'danger');
+      clearError();
+    }
+    // eslint-disable-next-line
+  }, [error, isAuthenticated, props.history]);
+
   const onChange = e => setUser({ ...user, [e.target.name]: e.target.value });
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log(user);
+    if (email === '' || password === '') {
+      setAlert('Please enter valid email and password', 'danger');
+    } else {
+      login({ email, password });
+    }
   };
-  const { email, password } = user;
+
   return (
     <div className='form-container'>
       <h1> Login Account</h1>
