@@ -9,7 +9,8 @@ import {
   USER_LOADED,
   AUTH_ERROR,
   LOGIN_SUCCESS,
-  LOGIN_FAIL
+  LOGIN_FAIL,
+  LOGOUT
 } from '../types';
 import setAuthToken from '../../component/utils/setAuthToken';
 
@@ -79,6 +80,9 @@ const AuthState = props => {
   };
 
   //Logout User
+  const logout = () => {
+    dispatch({ type: LOGOUT });
+  };
 
   //clearError
   const clearError = () => {
@@ -96,7 +100,8 @@ const AuthState = props => {
         register,
         clearError,
         loadUser,
-        login
+        login,
+        logout
       }}
     >
       {props.children}

@@ -6,6 +6,7 @@ export const CLEAR_CURRENT = 'CLEAR_CURRENT';
 export const UPDATE_CONTACT = 'UPDATE_CONTACT';
 export const FILTER_CONTACT = 'FILTER_CONTACT';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
+export const CONTACT_ERROR = 'CONTACT_ERROR';
 
 //Auth Context
 export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
@@ -15,6 +16,7 @@ export const USER_LOADED = 'USER_LOADED';
 export const AUTH_ERROR = 'AUTH_ERROR';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_FAIL = 'LOGIN_FAIL';
+export const LOGOUT = 'LOGOUT';
 
 //Alert Context
 export const SET_ALERT = 'SET_ALERT';

@@ -54,10 +54,16 @@ li {
 }
 
 .nav-btn {
+  margin: 0px 20px;
   padding: 5px 20px;
   border: 1px solid white;
   border-radius: 5px;
   color: white;
+}
+.nav-btn span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* **************NavBar************** */
