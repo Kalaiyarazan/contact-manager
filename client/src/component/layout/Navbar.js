@@ -17,7 +17,9 @@ const Navbar = ({ title = 'Contact Manager' }) => {
 
   const authLink = (
     <Fragment>
-      <h4>Hello, {user && user.name}</h4>
+      <h4>
+        Hello, {user && user.name.charAt(0).toUpperCase() + user.name.slice(1)}
+      </h4>
 
       <a href='#' className='nav-btn' onClick={onLogout}>
         <span>
