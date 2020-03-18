@@ -20,7 +20,7 @@ const Login = props => {
     if (isAuthenticated) {
       props.history.push('/');
     }
-    if (error !== null) {
+    if (error === 'Invalid Credentials') {
       setAlert(error, 'danger');
       clearError();
     }
